@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>NEXACORE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="brand">
+    <img src="img/logo_store.png" class="logo">
+    <h1 id="storeName"></h1>
+  </div>
+  <div class="subtitle">Fast • Secure • Unlimited</div>
+
+  <div class="badge">
+    <span>✔ Terpercaya</span>
+    <span>🔥 Best Seller</span>
+    <span>💸 Paling Hemat</span>
+  </div>
+
+  <h3>Pilih Game</h3>
+  <div class="grid" id="gameList"></div>
+
+  <h3>Filter</h3>
+  <div class="filter">
+    <button onclick="setFilter('all')">Semua</button>
+    <button onclick="setFilter('diamond')">Diamond</button>
+    <button onclick="setFilter('pass')">Pass</button>
+  </div>
+
+  <h3>Pilih Nominal</h3>
+  <div class="grid" id="nominalList"></div>
+
+  <h3>User ID</h3>
+  <input id="userId" placeholder="Masukkan User ID">
+  <input id="server" placeholder="Server (opsional)">
+
+  <h3>Pembayaran</h3>
+  <div class="pay" id="payments">
+    <div>DANA</div>
+    <div>OVO</div>
+    <div>GOPAY</div>
+    <div class="active">QRIS</div>
+  </div>
+
+  <div class="summary">
+    Harga: <b id="priceText">-</b><br>
+    Admin: <b>Rp 1.000</b>
+  </div>
+
+  <button onclick="checkout()">Konfirmasi & Bayar</button>
+  <footer>© 2026 NEXACORE</footer>
+</div>
+
+<div id="qrisPopup" class="popup">
+  <div class="popup-box">
+    <h3>Scan QRIS</h3>
+    <img src="img/qris.png">
+    <p>Setelah bayar klik tombol di bawah</p>
+    <button onclick="lanjutWA()">Saya Sudah Bayar</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+                          </html>
