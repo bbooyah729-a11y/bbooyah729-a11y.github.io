@@ -1,0 +1,103 @@
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:linear-gradient(180deg,#000,#0f172a,#000);
+  color:#fff;
+}
+.container{max-width:1100px;margin:auto;padding:20px}
+.brand{display:flex;justify-content:center;align-items:center;gap:14px}
+.logo{width:48px;height:48px;border-radius:12px}
+.subtitle{text-align:center;color:#94a3b8}
+.badge{display:flex;justify-content:center;gap:10px;margin:15px 0;flex-wrap:wrap}
+.badge span{background:#1e293b;padding:6px 12px;border-radius:999px;font-size:12px}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:15px}
+.card{
+  background:#1e293b;
+  border:1px solid #334155;
+  border-radius:14px;
+  padding:15px;
+  text-align:center;
+  cursor:pointer;
+  position:relative;
+}
+.card.active{border-color:#22c55e}
+
+.label{
+  position:absolute;
+  top:8px;right:8px;
+  background:#22c55e;
+  padding:3px 8px;
+  border-radius:999px;
+  font-size:10px;
+  font-weight:bold;
+}
+.label.pass{background:#3b82f6}
+.label.hemat{background:#f59e0b}
+
+.filter{display:flex;gap:10px;margin-bottom:10px}
+.filter button{
+  padding:8px 12px;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+  background:#1e293b;
+  color:#fff;
+}
+
+input{
+  width:100%;
+  padding:12px;
+  margin-top:8px;
+  border-radius:10px;
+  border:1px solid #334155;
+  background:#020617;
+  color:#fff;
+}
+
+.pay{display:flex;gap:12px;flex-wrap:wrap}
+.pay div{
+  background:#1e293b;
+  border:1px solid #334155;
+  padding:12px;
+  border-radius:12px;
+  cursor:pointer;
+}
+.pay .active{border-color:#22c55e}
+
+.summary{
+  background:#020617;
+  border:1px solid #334155;
+  border-radius:14px;
+  padding:15px;
+  margin:20px 0;
+}
+
+button{
+  width:100%;
+  padding:15px;
+  background:#22c55e;
+  border:none;
+  border-radius:14px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+footer{text-align:center;color:#94a3b8;margin-top:30px}
+
+.popup{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.8);
+  justify-content:center;
+  align-items:center;
+}
+.popup-box{
+  background:#020617;
+  padding:20px;
+  border-radius:16px;
+  max-width:320px;
+  text-align:center;
+}
+.popup-box img{width:100%;border-radius:12px}
