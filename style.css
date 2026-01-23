@@ -1,0 +1,53 @@
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:#0f172a;
+  color:#fff;
+}
+
+header{
+  text-align:center;
+  padding:20px;
+  background:#020617;
+}
+
+main{
+  padding:15px;
+}
+
+select,input,button{
+  width:100%;
+  padding:12px;
+  margin:8px 0;
+  border-radius:10px;
+  border:none;
+}
+
+button{
+  background:#22c55e;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.adminBtn{
+  background:#334155;
+}
+
+#invoiceBox{
+  margin-top:15px;
+  padding:12px;
+  border:1px solid #334155;
+  border-radius:12px;
+}
+
+#dashboard{
+  position:fixed;
+  inset:0;
+  background:#020617;
+  padding:15px;
+  overflow:auto;
+}
+
+.hidden{
+  display:none;
+}
