@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>NEXACORE Top Up</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>NEXACORE</h1>
+  <p>Fast • Secure • Unlimited</p>
+</header>
+
+<main>
+  <select id="gameSelect"></select>
+  <select id="nominalSelect"></select>
+
+  <input id="userId" placeholder="User ID / Server">
+  <button onclick="buatInvoice()">Buat Invoice</button>
+
+  <div id="invoiceBox"></div>
+
+  <button class="adminBtn" onclick="openDashboard()">🔐 Admin</button>
+</main>
+
+<div id="dashboard" class="hidden">
+  <h3>Dashboard</h3>
+  <input type="date" id="filterDate">
+  <button onclick="applyFilter()">Filter</button>
+  <div id="dashboardContent"></div>
+  <button onclick="closeDashboard()">Tutup</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
